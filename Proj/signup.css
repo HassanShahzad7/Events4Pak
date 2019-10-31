@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face
+{
+	font-family: Poppins-Regular;
+	src: url("Fonts/Poppins-Regular.ttf");
+}
+
+
+.navbar{
+	padding: 11px;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+	font-style: normal;
+}
+
+
+
+
+
+*
+{
+	color: white;
+	font-family: Poppins-Regular;
+	font-size: 17px;
+	outline: none;
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+	background: url("Pics/bgg.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+
+
+.container
+{
+	width: 100%;
+	height: 100vh;
+	letter-spacing: 4px;
+}
+
+
+.top
+{
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+
+.top p
+{
+	display: inline-block;
+}
+
+.top a, .top p
+{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+
+.top a:hover
+{
+	text-decoration: none;
+}
+
+
+#login
+{
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 40px;
+	padding: 10px 40px;
+	letter-spacing: 2px;
+	margin-left: 10px;
+	background-color: white;
+	font-size: 17px;
+	color: #444444;
+	transition: background 0.5s, color 0.5s;
+	border: 2px solid white;
+}
+
+
+#login:hover
+{
+	color: white;
+	background-color: transparent;
+	text-decoration: none
+}
+
+
+#login:active
+{
+	box-shadow: inset 0 -3px 10px white;
+}
+
+
+.signup
+{
+	max-width: 600px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 25px;
+}
+
+
+select option
+{
+	color: black;
+}
+
+
+.signup h1
+{
+	padding-top: 15%;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+.fields
+{
+	margin-bottom: 20px;
+}
+
+
+.fields input, .fields select
+{
+	width: 100%;
+	background: none;
+	border: 0;
+	border-bottom: 2px solid white;
+	color: white;
+	padding: 0;
+	padding-bottom: 15px;
+	font-size: 15px;
+}
+
+
+.fields.name-email, .fields.degree
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.fields.name-email input, .fields.degree input, .fields.degree select
+{
+	width: 48%;
+}
+
+
+.register
+{
+	margin-top: 35px;
+}
+
+
+.register input[type="submit"]
+{
+	width: 200px;
+	display: block;
+	border: 2px solid white;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 4px;
+	cursor: pointer;
+	background: none;
+	margin: 0 auto;
+	transition: 0.75s linear;
+}
+
+.register input[type="submit"]:hover
+{
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+@media screen and (max-width : 480px)
+{
+	.register h1
+	{
+		padding-top: 5%;
+	}
+	
+	.fields.name-email, .fields.degree
+	{
+		flex-direction: column;
+	}
+	
+	.fields.name-email input, .fields.degree select, .fields.degree input
+	{
+		width: 100%;
+	}
+	
+	.fields.name-email input[type="text"], .fields.degree select
+	{
+		margin-bottom: 20px;
+	}
+}
+
+
+footer{
+	background-color: #3f3f3f;
+	color:#d4d4d4;
+	padding-top: 1rem;
+}
+hr.light{
+	 border-top: 1px solid #d4d4d4;
+	 width: 75%;
+	 margin-top: .7em;
+	 margin-bottom: 1rem;
+}
+footer a{
+	color: #d4d4d4
+}
+hr.lighty{
+	 border-top: 1px solid #d4d4d4;
+	 width: 100%;
+	 margin-top: .7em;
+	 margin-bottom: 1rem;
+}
+
+
+#footercontact
+{
+	text-decoration: none;
+}
+
+
+
+
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+:hover::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

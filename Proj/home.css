@@ -1,0 +1,237 @@
+#trend{
+	display: inline;
+}
+#trendy{
+	display: inline;
+}
+@font-face
+{
+	font-family: Poppins-Regular;
+	src: url("Fonts/Poppins-Regular.ttf");
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-family: "Poppins-Regular";
+	color: #222;
+	font-size: 17px;
+}
+center{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.navbar{
+	padding: 11px;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+}
+.carousel-caption{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.carousel-caption h1{
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 0.9px 0.9px 14px #000;
+}
+.carousel-caption h3{
+	font-size: 200%;
+	font-weight: 500;
+	text-shadow: 0.9px 0.9px 9px #000;
+	padding-bottom: 1rem;
+}
+.btn-primary{
+	background-color: #563d7c;
+	border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+	background-color: #6648b1;
+	border: 1px solid #6648b1;
+}
+.padding{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.welcome{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+.welcome hr{
+	border-top: 2px solid #b4b4b4;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+.social a{
+	font-size: 3em;
+	padding:1em;
+}
+.fa-facebook{
+	color:#3b5998;
+}
+.fa-twitter{
+	color:#00aced;
+}
+.fa-youtube{
+	color:#bb0000;
+}
+.fa-instagram{
+	color: #517fa4;
+}
+.fa-facebook:hover{
+	color:#d3d3d3;
+}
+.fa-twitter:hover{
+	color:#d3d3d3;
+}
+.fa-youtube:hover{
+	color:#d3d3d3;
+}
+.fa-instagram:hover{
+	color:#d3d3d3;
+}
+.social{
+	display: inline;
+}
+footer{
+	background-color: #3f3f3f;
+	color:#d4d4d4;
+	padding-top: 1rem;
+}
+hr.light{
+	 border-top: 1px solid #d4d4d4;
+	 width: 75%;
+	 margin-top: .7em;
+	 margin-bottom: 1rem;
+}
+footer a{
+	color: #d4d4d4
+}
+hr.lighty{
+	 border-top: 1px solid #d4d4d4;
+	 width: 100%;
+	 margin-top: .7em;
+	 margin-bottom: 1rem;
+}
+
+
+#footercontact
+{
+	text-decoration: none;
+}
+
+
+@media (max-width: 992px)
+{
+	.social a{
+		font-size: 4em;
+		padding: 2rem;
+	}
+}
+@media(max-width: 768px)
+{
+	.social a{
+		font-size: 2.5em;
+		padding: 1.2rem;
+	}
+	.carousel-caption{
+		top: 45%;
+	}
+	.carousel-caption h1{
+		font-size: 350%;
+	}
+	.carousel-caption h3{
+		font-size: 140%;
+		font-weight: 400;
+		padding-bottom: .2rem;
+	}
+	.carousel-caption.btn{
+		font-size: 94%;
+		padding: 8px 15px;
+	}
+	.display-4{
+		font-size: 200%;
+	}
+}
+@media(max-width: 576px)
+{
+	.carousel-caption{
+		top: 40%;
+	}
+	.carousel-caption h1{
+		font-size: 245%;
+	}
+	.carousel-caption h3{
+		font-size: 105%;
+	}
+	.carousel-caption.btn{
+		font-size: 90%;
+		padding: 4px 8px;
+	}
+	.carousel-indicators{
+		display: none;
+	}
+	.display-4{
+		font-size: 150%;
+	}
+	.social a{
+		font-size: 2em;
+		padding: 0.65rem;
+	}
+}
+
+
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+.header{
+	position:sticky;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

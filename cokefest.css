@@ -1,0 +1,12 @@
+		pls{
+			float: left;
+			width: 80%;
+		}
+		imag{
+			float: left;
+			display: inline;
+		}
+		tex{
+			display: inline;
+			float:right;
+		}

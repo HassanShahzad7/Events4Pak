@@ -1,0 +1,301 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face
+{
+	font-family: Poppins-Regular;
+	src: url("Fonts/Poppins-Regular.ttf");
+}
+
+
+*
+{
+	color: white;
+	font-family: Poppins-Regular;
+	font-size: 17px;
+}
+
+body
+{
+	height: 100%;
+	margin: 0;
+	background: url("Pics/bgg.jpg") no-repeat center;
+	
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+
+.navbar{
+	padding: 11px;
+}
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+	font-style: normal;
+}
+
+
+.login
+{
+	margin: 0 auto;
+	transform: translateY(15%);
+	height: auto;
+	overflow: hidden;
+	max-width: 350px;
+	width: 100%;
+}
+
+
+.logo, .login h2
+{
+	text-align: center;
+}
+
+
+.logo span
+{
+	font-size: 55px;
+}
+
+
+.login h2
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
+
+
+.signup p, .form-elements a, .form-elements input, label
+{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+
+#login, #signup-but
+{
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 40px;
+	padding: 10px 40px;
+	letter-spacing: 2px;
+}
+
+
+#login
+{
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	float: left;
+	transition: background 0.5s, color 0.5s;
+}
+
+
+#login:hover
+{
+	background-color: white;
+	color: #444444;
+	text-decoration: none;
+}
+
+
+#signup-but
+{
+	margin-left: 10px;
+	color: #444444;
+	background-color: white;
+	transition: background 0.5s, color 0.5s;
+	border: 2px solid white;
+}
+
+
+#signup-but:hover
+{
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+#signup, #forget
+{
+	float: right;
+}
+
+.clear
+{
+	clear: both;
+}
+
+
+.top
+{
+	float: right;
+	margin-right: 3%;
+	margin-top: 1%;
+}
+
+
+.form-elements
+{
+	margin-bottom: 25px;
+	border-bottom: 2px solid white;
+}
+
+#forget
+{
+	padding-top: 10px;
+	color: #888888;
+	text-decoration: none;
+	transition: 0.5s linear;
+	float: right;
+}
+
+
+input, label
+{
+	padding: 10px;
+	height: 40px;
+	box-sizing: border-box;
+	float: left;
+	outline: 0;
+	border: 0;
+	background: none;
+}
+
+
+label
+{
+	width: 32px;
+}
+
+
+input
+{
+	width: calc(100% - 32px);
+	color: white;
+}
+
+.top p
+{
+	display: inline-block;
+}
+
+a
+{
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+
+#forget:hover
+{
+	color: white;
+	transform: translate(-7px, 5px) scale(1.1, 1.1);
+}
+
+#login:active
+{
+	box-shadow: inset 0 5px 10px #111111;
+}
+
+#signup-but:active
+{
+	box-shadow: inset 0px -3px 10px white;
+}
+
+
+.button-group
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 480px)
+{
+	.login
+	{
+		width: 80%;
+		flex-direction: column;
+	}
+	
+	.button-group
+	{
+		flex-direction: column;
+	}
+	
+	#login
+	{
+		text-align: center;
+	}
+	
+	#forget
+	{
+		text-align: center;
+	}
+	
+	#forget:hover
+	{
+		transform: scale(1, 1.1);
+	}
+	
+	.top p
+	{
+		display: none;
+	}
+	
+	#sigup-but
+	{
+		display: inline-block;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+:hover::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+
+
+
+
+

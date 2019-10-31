@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign Up</title>
+	
+	
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	
+	<link rel="stylesheet" href="signup.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	
+	
+</head>
+
+<body>
+	
+	
+	<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<a href="#" class="navbar-brand">EventsforPak</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResp">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id= "navbarResp">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="home.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="Project.html" class="nav-link">Events</a>
+					
+				</li>
+				<li class="nav-item">
+					<a href="aboutus.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a href="login.html" class="nav-link">Sign Up/Login</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	
+	
+	
+	
+	<div class="top">
+	
+		<div class="login">
+		
+			<p> Already a member? </p> <a href="login.html" id="login"> Login </a>
+			
+		</div>
+		
+	</div>
+	
+	
+	<div class="container">
+			
+			<form>
+		
+			<div class="signup">
+				<h1> Register Now </h1>
+				
+				<div class="fields name-email">
+					
+					<input type="text" placeholder="Full Name" required>
+					
+					<input type="email" placeholder="Email" required>
+					
+				</div>
+				
+				<div class="fields password">
+					
+					<input type="password" placeholder="Password" required>
+					
+				</div>
+				
+				
+				<div class="fields confirm-password">
+				
+					<input type="password" placeholder="Confirm Password" required>
+					
+				</div>
+				
+				
+				<div class="fields university">
+				
+					<input list="university" placeholder="Enter your University Name">
+					
+					<datalist id="university">
+					
+						<option value="NUST"></option>
+						
+						<option value="COMSATS"></option>
+						
+						<option value="LUMS"> </option>
+						
+						<option value="GIKI"></option>
+							
+					</datalist>
+					
+				</div>
+				
+				<div class="fields degree">
+					
+					<select required>
+						
+						<option value="Bachelors"> Bachelors </option>
+						<option value="Masters"> Masters </option>
+						<option value="phd"> PhD. </option>
+					
+					</select>
+				
+					<input list="domain" placeholder="Domain of Study">
+					
+					<datalist id="domain">
+						
+						<option value="Computer Science"></option>
+						<option value="Electrical Engineering"></option>
+						<option value="Software Engineering"></option>
+						<option value="Chemical Engineering"></option>
+						<option value="Business Administration"></option>
+						
+					</datalist>
+					
+				</div>
+				
+				
+				<div class="register">
+				
+					<input type="submit" value="Sign Up">
+					
+				</div>
+				
+				
+				
+			</div>
+				
+			</form>
+		
+		</div>
+
+	
+	
+	
+</body>
+</html>

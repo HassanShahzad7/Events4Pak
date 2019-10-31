@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="aboutus.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+	<style >
+.card
+ {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  height:300px;
+  background-color: white;
+  border-radius: 15px;
+  float:left ;
+  margin-left: 100px;
+  margin-top: 20px;
+  align-content: center;
+}
+.card:hover
+{
+ box-shadow: 10px 10px ; 
+}
+.card:hover .container
+{
+  display:block;
+
+}
+.card:hover img
+{
+  height:0px;
+   filter: grayscale(0%);
+  
+}
+
+.container
+{
+  display: none;
+  height:300px;
+ 
+}
+img
+{
+  width: 300px;
+  height:300px;
+  border-radius: 15px;
+  transition: height 1s;
+  
+}
+h4,h2
+{
+    font-size: 12px
+ }   
+h1
+{
+    text-align: center;
+    color: white;
+}
+body
+{
+  background-image: url("q.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p
+{
+  padding-left: 5px;
+  padding-left: 5px;
+  font-size: 12px
+}
+.checkbox{
+	margin-left: 140px;
+	margin-top: 60px
+}
+
+</style>
+	
+</head>
+<body >
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a href="#" class="navbar-brand">EventsforPak</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResp">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id= "navbarResp">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="events.html" class="nav-link">Events</a>
+          
+        </li>
+        <li class="nav-item">
+          <a href="aboutus.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="login.php" class="nav-link">Sign Up/Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div><h1  style="color: black ; background-color:rgb(220,220,220); font-size: 100px ;"> Events</h1></div>
+	
+<div>
+	<label class="checkbox">
+       <b>Select:</b><br>
+  </label>
+  <label>
+    <input type="checkbox" value="Islamabad">
+    <b>Islamabad</b>
+  </label>
+  <label>
+    <input type="checkbox" value="NUST">
+    <b>NUST</b>
+  </label>
+  <label>
+    <input type="checkbox" value="FAST">
+    <b>FAST</b>
+  </label>    
+  	<label>
+  	<input type="checkbox" value="LUMS">
+    	<b>LUMS</b>
+	</label>
+</div>
+
+
+
+<DIV CLASS="movies">
+	<div class="card Islamabad FAST">
+  <img src="Pics/ns.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>Nascon-19</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>FAST</p>
+    <h4><b>Area</b></h4>
+    	<p class="genre">Islamabad/FAST</p> 
+    <h4><b>Location</b></h4>
+   		  <p>FAST University, H-11 Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="nascon.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="www.nu.edu.pk">www.nu.edu.pk</a>  
+  </div>
+</div>
+
+
+
+<div class="card Islamabad NUST">
+  <img src="Pics/so.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>SEECS Open House-19</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>SGA</p>
+    <h4><b>Area</b></h4>
+    	<p class="genre">Islamabd/NUST</p> 
+    <h4><b>Location</b></h4>
+   		  <p>NUST, H-12 Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="openhouse.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="http://www.nust.edu.pk/Pages/Default.aspx">www.nust.edu.pk</a> 
+  </div>
+</div>
+
+<div class="card Islamabad">
+  <img src="Pics/cf.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>Coke Fest</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>Islamabadians</p>
+    <h4><b>Area</b></h4>
+    	<p class="genre">Islamabad</p> 
+    <h4><b>Location</b></h4>
+   		  <p>Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="cokefest.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="https://www.oyeyeah.com/events">Food Festival-2K19</a> 
+  </div>
+</div>
+
+<div class="card LUMS">
+  <img src="Pics/sp.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>LSF-19</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>LUMS</p>
+    <h4><b>AREA</b></h4>
+    	<p class="genre">LUMS</p> 
+    <h4><b>Location</b></h4>
+   		  <p>LUMS LAHORE</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="lsf19.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="https://lums.edu.pk">www.lums.edu.pk</a> 
+  </div>
+</div>
+
+
+<div class="card Islamabad FAST" >
+  <img src="Pics/fb.jpg" alt="image">
+   
+  <div class="container">
+    <h2><b>Forbes</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>FAST</p>
+    <h4><b>Area</b></h4>
+    	<p class="genre">Fast Islamabad</p> 
+    <h4><b>Location</b></h4>
+   		  <p> H-11 Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="forbes.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="https://www.forbes.com">www.forbes.com</a> 
+  </div>
+</div>
+
+<div class="card Islamabad" >
+  <img src="Pics/d.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>D WAVES 2.0</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>Islamabadians</p>
+    <h4><b>AREA</b></h4>
+    	<p class="genre">Islamabad</p> 
+    <h4><b>Location</b></h4>
+   		  <p> H-11 Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="dwaves.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="#">www.dwave.com</a> 
+  </div>
+</div>
+
+<div class="card LUMS" >
+  <img src="Pics/lm.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>LUMUN</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>LUMS</p>
+    <h4><b>AREA</b></h4>
+    	<p class="genre">LUMS</p> 
+    <h4><b>Location</b></h4>
+   		  <p>LUMS LAHORE</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="lumun.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="https://lums.edu.pk">www.lums.edu.pk</a> 
+  </div>
+</div>
+
+<div class="card Islamabd NUST" >
+  <img src="Pics/spn.jpg" alt="image">
+
+  <div class="container">
+    <h2><b>Sports Gala-19</b></h2> 
+    <h4><b>Organizer</b></h4>
+    	<p>NUST</p>
+    <h4><b>AREA</b></h4>
+    	<p class="genre">NUST</p> 
+    <h4><b>Location</b></h4>
+   		  <p>NUST, H-12 Islamabad</p> 
+    <h4><b>For Registration:</b></h4>
+     	 <a href="gala.html"> Click Here</a> 
+    <h4><b>More Info</b></h4>
+      <a href="http://www.nust.edu.pk">www.nust.edu.pk</a> 
+  </div>
+</div>
+</DIV>
+
+
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+  var movies = $(".movies .card");
+  	var genre = [];
+  	for (var i = 0; i < $(".genre").length; i++) {
+  		genre.push($(".genre")[i].innerText);
+  	}
+  
+
+  	$(document).ready(function(){
+  		$(" input[type=checkbox]").on("click", function() {
+  			var checked = $(" input:checked");
+  			var genreSelected = [];
+
+  			if (checked.length === 0) {
+  				for (var i = 0; i < movies.length; i++) {
+  					movies[i].style.display = "block";
+  				}
+  			}
+
+  			for (var i = 0; i < checked.length; i++) {
+  				genreSelected.push(checked[i].defaultValue);
+  			}
+  			console.log(genreSelected);
+
+
+  			for (var i = 0; i < genre.length; i++) {
+  				for (var j = 0; j < genreSelected.length; j++) {
+  					if (genre[i].includes(genreSelected[j]))
+  						movies[i].style.display = "block";
+  					else
+						movies[i].style.display = "none";
+  				}
+  			}
+  		});
+
+	});
+</script>
+	
+	
+			
+
+
+</body>
+</html>

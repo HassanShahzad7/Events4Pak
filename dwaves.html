@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D Waves</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>proj</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="aboutus.css">
+	<style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+	<div class="container-fluid">
+		<a href="#" class="navbar-brand">EventsforPak</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResp">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id= "navbarResp">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="home.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="events.html" class="nav-link">Events</a>
+					
+				</li>
+				<li class="nav-item">
+					<a href="aboutus.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">Contact Us</a>
+				</li>
+				<li class="nav-item">
+					<a href="login.php" class="nav-link">Sign Up/Login</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<hr>
+			<h1 display-4>D Waves</h1>
+			<hr>
+		</div>
+		
+
+	</div>
+</div>
+<div class="imag"><img src="Pics\dims.jpg"></div><br><br>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-6">
+			<hr>
+			<h3 display-4 style="color: red" align="text-center">What is D Waves?</h3>
+			<hr>
+			<div class="tex">The most awaited festival of the year is back! This time,  Sports Fest is Powered by Jazz Super 4G starting from the 16th of June. It is a festival, which is an attraction for people of all ages in multiple cities of Pakistan. An amazing recreational event for the whole family featuring numerous artists, activities, food stalls and much more. Jazz is not only a partner in making the event more exciting but is also offering some amazing offers, promotions, and FREE WiFi at the venue!</div>
+		</div>
+		<div class="col-6">
+			<br><br>
+			<img src="Pics\d.jpg">
+			
+		</div><br><br>
+		
+
+	</div>
+</div><br><br><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwi6fWZJKq8EgKi_8N0xFQmZkmSSZDctg&callback=initMap"
+        async defer></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat:  -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+
+        var cord = {
+            'ISB': [33.684422,73.047882],
+            'LHR': [31.5204,74.3587],
+            
+        };
+
+        function changeMap(city) {
+            var c;
+            if(city == 'ISB'){
+                c = cord.ISB;
+            }   else if (city == 'LHR'){
+                c = cord.LHR;
+            } 
+            map.setCenter(new google.maps.LatLng(c[0], c[1]));
+        }
+    </script>
+    <div>
+        <h2>Please Choose a City</h2>
+    </div>
+    <form>
+        <fieldset>
+            <label>
+                Cities
+            </label>
+            <select id="myCity" name="myCity" onchange="changeMap(this.value)">
+                <option value="None">Select a City</option>
+                <option value="ISB">Islamabad, PK</option>
+                <option value="LHR">Lahore, PK</option>
+               
+            </select>
+        </fieldset>
+    </form>
+    <div id="map"></div>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-6">
+				<hr class="light">
+				<h5> <a href="contact.html" id="footercontact"> Contact Us </a> </h5>
+				<hr class="light">
+				<p>555-5555-555</p>
+				<p>eventsforpak@gmail.com</p>
+				<p>221B Baker Street</p>
+				<p>Islamabad, Pakistan</p>
+			</div>
+			<div class="col-md-6">
+				<hr class="light">
+				<h5>Our Hours</h5>
+				<hr class="light">
+				<p>Monday-Thurs: 9am to 5pm</p>
+				<p>Friday: 9am to 12 pm and 2:30pm to 5pm</p>
+				<p>Saturday-Sunday: closed</p>
+			</div>
+			<div class="col-12">
+				<hr class="lighty">
+				<h5>&copy; eventsforpak.com</h5>
+			</div>
+		</div>
+	</div></footer>
+</body>
+</html>
